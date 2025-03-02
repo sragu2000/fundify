@@ -1,0 +1,27 @@
+img {
+    display: block;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* While the image is loading */
+img.loading {
+    opacity: 0;
+    filter: blur(10px);
+}
+
+/* When the image has loaded */
+img.loaded {
+    opacity: 1;
+    filter: blur(0);
+}
+
+/* If the image fails to load */
+img.error {
+    opacity: 1;
+    filter: none;
+}
+
+.fallback-image-style {
+    width: 100%;
+    border-radius: 20px;
+}

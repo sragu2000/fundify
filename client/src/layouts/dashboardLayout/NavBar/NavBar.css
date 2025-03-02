@@ -1,0 +1,38 @@
+.db-nav-container {
+    background-color: var(--header-background-color);
+    padding: 11px 15px;
+}
+
+.db-nav-content {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.db-nav-logo {
+    width: 40px;
+    height: auto;
+    object-fit: cover;
+}
+
+.db-nav-links {
+    /* flex: 1; */
+}
+
+.db-nav-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 13px;
+}
+
+.db-nav-links ul a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}

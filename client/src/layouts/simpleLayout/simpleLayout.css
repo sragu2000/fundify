@@ -1,0 +1,27 @@
+.simple-layout-main-container section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+@media all and (min-width: 1500px) {
+    .simple-layout-main-container section {
+        max-width: 1500px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .simple-layout-main-container section {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+
+.simple-layout-container {
+    min-height: 100vh;
+    background-color: var(--body-bg-color);
+}

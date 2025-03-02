@@ -1,0 +1,78 @@
+.causes-card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.causes-card {
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.05);
+    /* margin: 20px; */
+    padding-bottom: 20px;
+}
+
+.causes-card-heading {
+    margin: 0px;
+    color: #000;
+    font-family: Teachers;
+    font-size: var(--font-20-px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.causes-card-description {
+    margin: 0px;
+    overflow: hidden;
+    color: rgba(0, 0, 0, 0.60);
+    text-overflow: ellipsis;
+    white-space: wrap;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 125% */
+}
+
+.causes-card-info {
+    padding: 0px 20px;
+}
+
+.causes-card-info .main-heading {
+    color: #000;
+    font-family: Inter;
+    font-size: var(--font-16-px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.causes-card-info .sub-heading {
+    color: var(--Gray-600, #6C757D);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.causes-card-view-details-button {
+    border-radius: 12px;
+    background: var(--Default-Black, #000);
+    display: flex;
+    padding: 16px 40px;
+    justify-content: center;
+    align-items: center;
+    color: var(--Default-White, #FFF);
+    font-family: Teachers;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}

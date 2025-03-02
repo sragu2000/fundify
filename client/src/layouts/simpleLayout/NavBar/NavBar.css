@@ -1,0 +1,138 @@
+.navbar-container {
+  display: flex;
+  align-items: center;
+  padding: 6px 20px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: var(--max-width-container);
+  justify-content: space-between;
+  background-color: var(--black-color);
+  justify-content: space-between;
+}
+
+.nav-menu-item {
+  color: var(--white-color);
+  font-family: Inter;
+  font-size: var(--font-16-px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.simple-nav-icon {
+  color: var(--white-color);
+}
+
+
+.navbar-container img {
+  max-height: 50px;
+  border-radius: 50%;
+}
+
+.navbar-container ul {
+  display: flex;
+  list-style: none;
+  column-gap: 40px;
+}
+
+.navbar-container li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-container a {
+  text-decoration: none;
+  color: var(--title-color-second-line);
+}
+
+.navbar-container li:hover {
+  color: var(--primary-color) !important;
+  cursor: pointer;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  /* Remove underline from text links */
+  gap: 5px;
+}
+
+.logo-container h3 {
+  color: var(--white-color);
+}
+
+.navbar-container .menu {
+  display: none;
+  z-index: 999;
+}
+
+@media only screen and (max-width: 950px) {
+  .nav-donate-button {
+    display: none;
+  }
+
+  .navbar-container .menu {
+    display: flex;
+    padding: 0px 10px;
+  }
+
+  .navbar-container ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    height: 500px;
+    z-index: 999;
+    background: var(--black-color);
+    top: 0;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 40vw;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-container li {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .navbar-container .menu {
+    display: flex;
+    z-index: 999;
+  }
+
+  .navbar-container ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    z-index: 999;
+    background: var(--black-color);
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-container li {
+    display: flex;
+    flex-direction: column;
+  }
+}

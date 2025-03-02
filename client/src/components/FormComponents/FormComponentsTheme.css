@@ -1,0 +1,50 @@
+:root {
+  /* Label */
+  --field-label-padding: 6px;
+  --field-label-color: #303972;
+  --field-label-font-size: var(--font-18-px);
+  --field-label-font-weight: 600;
+  /* Field: Common */
+  --custom-input-border-radius: 5px;
+  --custom-input-border: 1px solid #c1bbeb;
+  --custom-input-focus-border: 1px solid black;
+  --custom-input-background: var(--white-100, #fff);
+  /* Label: Text */
+  --custom-text-indside-padding: 8px 8px 8px 8px;
+}
+
+.custom-text-label {
+  color: #8c8c97;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: var(--field-label-font-weight);
+  line-height: normal;
+}
+
+.custom-text-field {
+  width: 100%;
+  box-sizing: border-box;
+  padding: var(--custom-text-indside-padding);
+  border-radius: var(--custom-input-border-radius);
+  border: var(--custom-input-border);
+  background: var(--custom-input-background);
+  outline: none;
+}
+
+.custom-text-field:focus {
+  border: var(--custom-input-focus-border);
+}
+
+.custom-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--field-label-padding);
+  align-items: flex-start;
+}
+
+@media all and (max-width: 550px) {
+  .custom-text-label {
+    font-size: var(--mobile-font-14-px);
+  }
+}

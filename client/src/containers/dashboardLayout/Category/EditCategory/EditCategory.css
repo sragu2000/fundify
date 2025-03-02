@@ -1,0 +1,15 @@
+.edit-category-modal-field-text {
+    min-width: 320px;
+}
+
+.edit-category-modal-field-textarea {
+    min-width: 320px;
+    resize: none;
+    height: 100px;
+}
+
+.edit-category-form-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

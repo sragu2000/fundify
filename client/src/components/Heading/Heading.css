@@ -1,0 +1,9 @@
+.sl-heading {
+    color: var(--Default-Black, #000);
+    font-family: Teachers;
+    font-size: var(--font-50-px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 5px;
+}

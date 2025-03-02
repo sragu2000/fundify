@@ -1,0 +1,80 @@
+:root {
+    --progress-bar-color: #e5e5e6;
+    --progress-empty-color-h: 4.1;
+    --progress-empty-color-s: 89.6%;
+    --progress-empty-color-l: 58.4%;
+    --progress-filled-color-h: 122.4;
+    --progress-filled-color-s: 39.4%;
+    --progress-filled-color-l: 49.2%;
+}
+
+progress[value] {
+    display: block;
+    position: relative;
+    appearance: none;
+    width: 100%;
+    height: 10px;
+    border: 0;
+    border-radius: 10px;
+    background-color: var(--progress-bar-color);
+    overflow: hidden;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: var(--progress-bar-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+progress[value]::-webkit-progress-value {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+}
+
+progress[value]::-moz-progress-bar {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+}
+
+/* Progress Value Indicator */
+.progress-container {
+    position: relative;
+    width: 80%;
+}
+
+.progress-container progress {
+    width: 100%;
+}
+
+.progress-container::after {
+    content: attr(data-value) '%';
+    position: absolute;
+    left: calc(var(--progress-value) * 1%);
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 5px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.5s ease-in-out;
+}
+
+/* Animation */
+@keyframes progress {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: var(--progress-value);
+    }
+}

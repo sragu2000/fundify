@@ -1,0 +1,47 @@
+.sl-home-causes-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+    margin-top: 50px;
+}
+
+.sl-home-causes-view-all-button {
+    border-radius: 12px;
+    display: flex;
+    width: 200px;
+    padding: 16px 40px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    color: var(--Default-Black, #000);
+    font-family: Teachers;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    /* line-height: normal; */
+    text-transform: uppercase;
+    border: 2px solid #000;
+}
+
+#sl-home-causes {
+    padding: 50px 0;
+}
+
+@media all and (max-width: 1280px){
+    .sl-home-causes-card {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media all and (max-width: 920px){
+    .sl-home-causes-card {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media all and (max-width: 600px){
+    .sl-home-causes-card {
+        grid-template-columns: 1fr;
+    }
+}

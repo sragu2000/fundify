@@ -1,0 +1,135 @@
+.modalbox-main-container {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.377);
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 500;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+.modalbox-main-container-active {
+    opacity: 1;
+    /* target opacity */
+    visibility: visible;
+    /* target visibility */
+}
+
+.modalbox-container {
+    background-color: white;
+    /* padding: 12px; */
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    min-width: 200px;
+    margin: 20px;
+}
+
+.modalbox-header {
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 14px 14px 0px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: var(--header-background-color);
+}
+
+.modalbox-body {
+    width: 100%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    max-height: 350px;
+    overflow: auto;
+}
+
+.modalbox-footer {
+    padding: 8px 4px;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.modalbox-heading {
+    color: white;
+}
+
+.modalbox-close-button {
+    cursor: pointer;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.545);
+    margin-right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalbox-footer button {
+    border: none;
+    padding: 10px 20px;
+    margin: 0px 6px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.modal-button-success {
+    color: white;
+    /* Text color */
+    background-color: #28a745;
+    /* Green for success */
+    border: 1px solid #28a745;
+    /* Optional border */
+}
+
+.modal-button-success:hover {
+    background-color: #218838;
+    /* Darker green for hover state */
+    border-color: #1e7e34;
+}
+
+.modal-button-danger {
+    color: white;
+    /* Text color */
+    background-color: #dc3545;
+    /* Red for danger */
+    border: 1px solid #dc3545;
+    /* Optional border */
+}
+
+.modal-button-danger:hover {
+    background-color: #c82333;
+    /* Darker red for hover state */
+    border-color: #bd2130;
+}
+
+.modal-button-warning {
+    color: black;
+    /* Text color */
+    background-color: #ffc107;
+    /* Yellow for warning */
+    border: 1px solid #ffc107;
+    /* Optional border */
+}
+
+.modal-button-warning:hover {
+    background-color: #e0a800;
+    /* Darker yellow for hover state */
+    border-color: #d39e00;
+}

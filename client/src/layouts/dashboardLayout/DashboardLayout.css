@@ -1,0 +1,23 @@
+.main-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main-container section {
+    background: white;
+    min-height: 86vh;
+    max-height: 86vh;
+    border-radius: 23px;
+}
+
+.delete-button-style:hover {
+    stroke: red;
+}
+
+.dashboard-container {
+    min-height: 100vh;
+    background-color: var(--body-bg-color);
+}

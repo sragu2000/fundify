@@ -1,0 +1,18 @@
+.all-categories-header {
+    background: var(--grey-background-color);
+    padding: 10px 20px;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.all-categories-heading {
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.all-categories-table-container {
+    padding: 10px 20px;
+}
