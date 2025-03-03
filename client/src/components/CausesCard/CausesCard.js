@@ -2,6 +2,7 @@ import React from 'react'
 import "./CausesCard.css"
 import Image from '../Image/Image'
 import ProgressBar from '../ProgressBar/ProgressBar'
+import { Link } from 'react-router-dom'
 
 const CausesCard = ({ image, title, description, id, goal, raised, donationCount }) => {
     return (
@@ -21,7 +22,7 @@ const CausesCard = ({ image, title, description, id, goal, raised, donationCount
                         <div className='sub-heading'>Donations</div>
                     </div>
                 </div>
-                <button className='causes-card-view-details-button'>View Details</button>
+                <Link to={`/causes/${id}`} className='causes-card-view-details-button'>View Details</Link>
             </div>
         </div>
     )

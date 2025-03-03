@@ -50,9 +50,7 @@ const NavBar = () => {
         },
         {
             text: "All Causes",
-            onClick: () => {
-                scrollToSection("home-our-services");
-            },
+            href: "/causes"
         },
         {
             text: "Contact us",

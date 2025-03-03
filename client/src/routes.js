@@ -6,6 +6,8 @@ import Categories from './pages/dashboardPages/Categories';
 import Topics from './pages/dashboardPages/Topics';
 import SimpleLayout from './layouts/simpleLayout/SimpleLayout';
 import Home from './pages/simpleLayout/Home';
+import AllCauses from './containers/simpleLayout/AllCauses/AllCauses';
+import SingleCause from './containers/simpleLayout/SingleCause/SingleCause';
 
 export default function Router() {
 
@@ -25,6 +27,9 @@ export default function Router() {
       element: <SimpleLayout />,
       children: [
         { path: "/", element: <Home /> },
+        { path: "causes", element: <AllCauses /> },
+        { path: "causes/:causeid", element: <SingleCause /> },
+
 
       ],
     },

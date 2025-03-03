@@ -138,7 +138,6 @@ const ContactUs = () => {
                         ></CustomTextArea>
                         <Link to="/donate" className="primary-button send-message-button-home">SEND MESSAGE</Link>
                     </div>
-
                 </div>
             </div>
         </section>
