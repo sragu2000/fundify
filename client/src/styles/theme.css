@@ -24,10 +24,10 @@
 @media screen and (min-width: 0px) and (max-width: 550px) {
     :root {
         --font-64-px: 30px;
-        --font-50-px: 34px;
+        --font-50-px: 30px;
         --font-36-px: 22px;
-        --font-24-px: 20px;
-        --font-20-px: 18px;
+        --font-24-px: 17px;
+        --font-20-px: 14px;
         --font-19-px: 17px;
         --font-18-px: 16px;
         --font-16-px: 16px;
@@ -39,10 +39,10 @@
 @media only screen and (min-width: 551px) and (max-width: 768px) {
     :root {
         --font-64-px: 35px;
-        --font-50-px: 35px;
+        --font-50-px: 30px;
         --font-36-px: 24px;
-        --font-24-px: 22px;
-        --font-20-px: 20px;
+        --font-24-px: 18px;
+        --font-20-px: 14px;
         --font-19-px: 19px;
         --font-18-px: 18px;
         --font-16-px: 16px;
@@ -54,10 +54,10 @@
 @media screen and (min-width: 769px) and (max-width: 1279px) {
     :root {
         --font-64-px: 44px;
-        --font-50-px: 40px;
+        --font-50-px: 30px;
         --font-36-px: 24px;
-        --font-24-px: 24px;
-        --font-20-px: 22px;
+        --font-24-px: 19px;
+        --font-20-px: 16px;
         --font-19-px: 18px;
         --font-18-px: 18px;
         --font-16-px: 16px;
@@ -69,10 +69,10 @@
 @media screen and (min-width: 1280px) and (max-width: 1919px) {
     :root {
         --font-64-px: 64px;
-        --font-50-px: 50px;
+        --font-50-px: 40px;
         --font-36-px: 36px;
-        --font-24-px: 24px;
-        --font-20-px: 20px;
+        --font-24-px: 20px;
+        --font-20-px: 16px;
         --font-19-px: 19px;
         --font-18-px: 18px;
         --font-16-px: 16px;

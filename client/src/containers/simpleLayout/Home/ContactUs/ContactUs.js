@@ -1,6 +1,6 @@
 import React from 'react'
 import "./ContactUs.css"
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Heading from '../../../../components/Heading/Heading'
 import EmailIcon from "./icons/email.svg"
 import PhoneIcon from "./icons/phone.svg"
@@ -17,7 +17,7 @@ const ContactUs = () => {
     return (
         <section id="sl-home-contact-us">
             <div className='flex align-center justify-center flex-column sl-home-contact-us-main-heading'>
-                <Heading heading={"Every Act of Kindness Counts"} className={"sl-home-contact-us-heading"}/>
+                <Heading heading={"Every Act of Kindness Counts"} className={"sl-home-contact-us-heading"} />
                 <p>
                     Libero dictum ut purus ut vel sit egestas. Ut ac mattis senectus ac suspendisse
                     vitae vel nulla eleifend. Est eros facilisi aenean nisl a. Vitae et fusce purus consectetur.

@@ -1,9 +1,10 @@
 .simple-layout-main-container section {
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-right: 60px;
+    margin-left: 60px;
 }
+
 
 @media all and (min-width: 1500px) {
     .simple-layout-main-container section {

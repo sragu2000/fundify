@@ -1,3 +1,7 @@
+#sl-home-contact-us {
+    padding: 100px 0px;
+}
+
 .sl-home-contact-us-main-heading p {
     color: #000;
     text-align: center;
@@ -38,7 +42,7 @@
 .contact-us-card .address {
     color: var(--Default-White, #FFF);
     font-family: Teachers;
-    font-size: var(--font-20-px);
+    font-size: var(--font-16-px);
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -48,7 +52,7 @@
 .contact-us-card .contact {
     color: var(--Default-White, #FFF);
     font-family: Teachers;
-    font-size: var(--font-20-px);
+    font-size: var(--font-16-px);
     font-style: normal;
     font-weight: 500;
     line-height: normal;

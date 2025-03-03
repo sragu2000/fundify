@@ -9,7 +9,7 @@ const SimpleLayout = () => {
             <main className="simple-layout-main-container">
                 <Outlet />
             </main>
-            {/* <Footer /> */}
+            <Footer />
         </div>
     );
 }

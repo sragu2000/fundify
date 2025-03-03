@@ -10,7 +10,7 @@ const HowTo = () => {
                 <div className='flex-item-1 howto-web-image-container'>
                     <Image src={HowToImage} className={"howto-image"}></Image>
                 </div>
-                <div className='flex-item-1 flex gap-20 flex-column'>
+                <div className='flex-item-1 flex gap-10 flex-column howto-info-container'>
                     <Heading
                         heading='Transforming Good Intentions into Good Actions'
                     />

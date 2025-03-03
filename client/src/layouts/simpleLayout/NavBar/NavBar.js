@@ -49,21 +49,15 @@ const NavBar = () => {
             text: "Home",
         },
         {
-            text: "Courses",
+            text: "All Causes",
             onClick: () => {
                 scrollToSection("home-our-services");
             },
         },
         {
-            text: "About us",
-            onClick: () => {
-                scrollToSection("home-meet-tutor");
-            },
-        },
-        {
             text: "Contact us",
             onClick: () => {
-                scrollToSection("home-contact-us");
+                scrollToSection("sl-home-contact-us");
             },
         },
     ];
