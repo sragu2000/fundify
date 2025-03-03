@@ -62,7 +62,7 @@ const CausesHome = () => {
 
     return (
         <section id="sl-home-causes">
-            <div className='flex justify-space-between'>
+            <div className='flex justify-space-between latest-causes-main'>
                 <Heading heading={"Latest Causes"} />
                 <div className='flex align-center justidy-center'>
                     <button className='sl-home-causes-view-all-button'>More Causes</button>

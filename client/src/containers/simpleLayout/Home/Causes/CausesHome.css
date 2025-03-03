@@ -28,19 +28,30 @@
     padding: 50px 0;
 }
 
-@media all and (max-width: 1280px){
+@media all and (max-width: 1280px) {
     .sl-home-causes-card {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
-@media all and (max-width: 920px){
+@media all and (max-width: 920px) {
     .sl-home-causes-card {
         grid-template-columns: 1fr 1fr;
     }
+
+    .latest-causes-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sl-home-causes-view-all-button {
+        width: 171px;
+        padding: 12px 26px;
+        margin-top: 26px;
+    }
 }
 
-@media all and (max-width: 600px){
+@media all and (max-width: 600px) {
     .sl-home-causes-card {
         grid-template-columns: 1fr;
     }

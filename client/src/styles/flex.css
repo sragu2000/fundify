@@ -18,6 +18,10 @@
     justify-content: center;
 }
 
+.justify-space-aorund {
+    justify-content: space-around;
+}
+
 .justify-space-between {
     justify-content: space-between;
 }

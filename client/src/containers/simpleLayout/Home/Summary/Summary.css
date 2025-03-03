@@ -1,0 +1,33 @@
+.summary-home-card {}
+
+.summary-home-card .count {
+    color: var(--black-color);
+    font-family: Teachers;
+    font-size: var(--font-50-px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.summary-home-card .title {
+    color: rgba(0, 0, 0, 0.60);
+    text-align: center;
+    font-family: Teachers;
+    font-size: var(--font-24-px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+@media all and (max-width:780px) {
+    .summary-home-card-main {
+        flex-wrap: wrap;
+        gap: 30px
+    }
+
+    .summary-home-card {
+        gap: 10px
+    }
+}

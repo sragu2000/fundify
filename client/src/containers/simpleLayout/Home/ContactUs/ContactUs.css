@@ -1,0 +1,169 @@
+.sl-home-contact-us-main-heading p {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: var(--font-16-px);
+    width: 695px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    /* 168.75% */
+}
+
+.contact-us-card h4 {
+    overflow: hidden;
+    color: var(--Default-White, #FFF);
+    text-overflow: ellipsis;
+    font-family: Teachers;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0px;
+}
+
+.contact-us-card p {
+    overflow: hidden;
+    color: rgba(255, 255, 255, 0.60);
+    text-overflow: ellipsis;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    margin: 0px;
+    /* 168.75% */
+}
+
+.contact-us-card .address {
+    color: var(--Default-White, #FFF);
+    font-family: Teachers;
+    font-size: var(--font-20-px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 20px;
+}
+
+.contact-us-card .contact {
+    color: var(--Default-White, #FFF);
+    font-family: Teachers;
+    font-size: var(--font-20-px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+.contact-us-card .side-1 {
+    border-radius: 30px 0px 0px 30px;
+    background-color: black;
+    padding: 20px 60px;
+    box-sizing: border-box;
+}
+
+.contact-us-card .side-2 {
+    border-radius: 0px 30px 30px 0px;
+    background-color: #f1f1f1;
+    padding: 20px 60px;
+    box-sizing: border-box;
+}
+
+.contact-us-card {
+    border-radius: 30px;
+    margin-top: 50px;
+}
+
+.sl-home-social-icons {
+    margin-top: 80px;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.home-contactus-field {
+    border-radius: 6px;
+    background: var(--Default-White, #FFF);
+    padding: 12px 16px;
+    border: white;
+    outline: none;
+}
+
+.home-contactus-label {
+    color: #000;
+    font-family: Teachers;
+    font-size: var(--font-20-px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.home-contactus-field-text-area {
+    border: none;
+    font-family: Teachers;
+    font-size: var(--font-16-px);
+    resize: none;
+}
+
+.send-message-button-home {
+    text-decoration: none;
+    width: 135px;
+    padding: 13px 14px;
+    border-radius: 8px;
+}
+
+.sl-home-contact-us-heading {
+    text-align: center;
+}
+
+@media all and (max-width: 1000px) {
+    .contact-us-card {
+        flex-direction: column;
+    }
+
+    .contact-us-card .side-1 {
+        border-radius: 30px 30px 0px 0px;
+        padding: 20px 30px;
+    }
+
+    .contact-us-card .side-2 {
+        border-radius: 0px 00px 30px 30px;
+        padding: 40px 30px;
+    }
+
+    .sl-home-social-icons {
+        margin-top: 10px;
+    }
+
+    .contact-us-card .address {
+        margin-top: 10px;
+    }
+
+    .sl-home-contact-us-main-heading p {
+        width: 60vw;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .sl-home-contact-us-main-heading p {
+        width: unset;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .contact-us-card h4 {
+        font-size: 35px;
+    }
+
+    .contact-us-row {
+        flex-direction: column;
+    }
+
+    .contact-us-card .side-1 {
+        padding: 20px 20px;
+    }
+
+    .contact-us-card {
+        border-radius: 30px;
+        margin-top: 0px;
+    }
+}

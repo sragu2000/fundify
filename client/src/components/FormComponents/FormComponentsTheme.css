@@ -32,9 +32,9 @@
   outline: none;
 }
 
-.custom-text-field:focus {
+/* .custom-text-field:focus {
   border: var(--custom-input-focus-border);
-}
+} */
 
 .custom-input-container {
   display: flex;

@@ -82,7 +82,7 @@ const AddCategory = ({ setResetContent }) => {
                             placeholder={"Name"}
                         ></CustomText>
                         <CustomTextArea
-                            fieldClassName={"edit-category-modal-field-textarea"}
+                            fieldClassName={" edit-category-modal-field-textarea"}
                             label={"Description *"}
                             rows={10}
                             flex={"100%"}
