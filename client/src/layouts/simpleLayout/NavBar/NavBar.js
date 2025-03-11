@@ -64,7 +64,7 @@ const NavBar = () => {
             <nav className="nav-container">
                 <div className="navbar-container">
                     <div className="logo-container">
-                        <Link href="/" className="logo-link">
+                        <Link to="/" className="logo-link">
                             <img src={Assets.logo} alt="Bio World Logo" className="logo-image" />
                             <h3 className="logo-text">Fundify</h3>
                         </Link>
