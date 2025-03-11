@@ -2,6 +2,7 @@ import React from 'react'
 import CausesCard from '../../../../components/CausesCard/CausesCard'
 import "./CausesHome.css"
 import Heading from '../../../../components/Heading/Heading'
+import { Link } from 'react-router-dom'
 const CausesHome = () => {
     const causesData = [
         {
@@ -65,7 +66,7 @@ const CausesHome = () => {
             <div className='flex justify-space-between latest-causes-main'>
                 <Heading heading={"Latest Causes"} />
                 <div className='flex align-center justidy-center'>
-                    <button className='sl-home-causes-view-all-button'>More Causes</button>
+                    <Link to="/causes" className='sl-home-causes-view-all-button'>All Causes</Link>
                 </div>
             </div>
             <div className='sl-home-causes-card'>

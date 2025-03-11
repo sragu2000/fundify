@@ -64,10 +64,10 @@ const NavBar = () => {
             <nav className="nav-container">
                 <div className="navbar-container">
                     <div className="logo-container">
-                        <a href="/" className="logo-link">
+                        <Link href="/" className="logo-link">
                             <img src={Assets.logo} alt="Bio World Logo" className="logo-image" />
                             <h3 className="logo-text">Fundify</h3>
-                        </a>
+                        </Link>
                     </div>
 
                     {menuOpen && (
@@ -80,6 +80,13 @@ const NavBar = () => {
                                     >
                                         {link.text}
                                     </Link>
+                                    {/* <Link
+                                        to={link?.href ? link.href : ""}
+                                        onClick={() => {
+                                            if (link?.onClick) link.onClick();
+                                            setMenuOpen(false); // Close menu on click
+                                        }}
+                                    >{link.text}</Link> */}
                                 </li>
                             ))}
 
