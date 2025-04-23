@@ -1,0 +1,9 @@
+
+
+payment
+get /payhere-payment-hook - payhere only
+post /submit-donation - *
+
+
+
+
