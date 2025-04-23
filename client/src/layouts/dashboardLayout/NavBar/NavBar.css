@@ -1,6 +1,8 @@
 .db-nav-container {
-    background-color: var(--header-background-color);
-    padding: 11px 15px;
+    background-color: black;
+    padding: 15px 15px;
+    color: white;
+    font-weight: 700;
 }
 
 .db-nav-content {
@@ -35,4 +37,16 @@
     text-decoration: none;
     color: white;
     font-weight: 500;
+}
+
+.db-nav-icons {
+    color: white;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.db-nav-icons:hover {
+    color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }

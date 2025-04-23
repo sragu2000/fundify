@@ -2,7 +2,6 @@ const User = require("../models/user.model");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const { CONFIG_JWT } = require("../../config");
-const ResponseHandler = require("../configurations/ResponseHandler");
 const AppError = require("../configurations/AppError");
 
 
@@ -24,12 +23,15 @@ const registerUser = async (req, res, next) => {
             lastName: lastName,
             email: email,
             password: hashedPassword,
-            role: userDataCount === 0 ? "admin" : "fundraiser",
+            role: userDataCount === 0 ? "admin" : "donor",
         };
         const user = await User.create(data);
         return res.status(201).json(
-            new ResponseHandler().setMessage("Registration Success").setData(user)
+            res.handler.setMessage("User registered").setData(user)
         );
+        // return res.status(201).json(
+        //     new ResponseHandler().setMessage("Registration Success").setData(user)
+        // );
     } catch (error) {
         next(error)
     }
@@ -38,10 +40,14 @@ const registerUser = async (req, res, next) => {
 const loginUser = async (req, res, next) => {
     try {
         const { email, password } = req.body;
+        console.log(email)
+        console.log(password)
+
         if (!email || !password) {
             return next(new AppError("Required parameters missing", 400));
         }
         const user = await User.findOne({ email: email });
+        
         if (!user) {
             return next(new AppError("User not found", 404));
         }
@@ -63,7 +69,7 @@ const loginUser = async (req, res, next) => {
             }
         );
         return res.status(200).json(
-            new ResponseHandler().setMessage("Login Success").setData({
+            res.handler.setMessage("Login Success").setData({
                 token: token
             })
         );

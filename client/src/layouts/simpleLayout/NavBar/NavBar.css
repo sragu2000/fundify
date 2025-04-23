@@ -69,6 +69,7 @@
 
 .logo-container h3 {
   color: var(--white-color);
+  margin: 0px;
 }
 
 .navbar-container .menu {
