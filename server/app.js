@@ -14,6 +14,8 @@ app.use(
   })
 );
 
+app.use(express.urlencoded({ extended: true }))
+
 app.get("/", (req, res) => {
   res.status(200).json({ status: true });
 });
